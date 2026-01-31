@@ -1,5 +1,7 @@
-deep-learning 📈 Advanced Time Series Forecasting with LSTM
-Hyperparameter Optimization and Explainability 📌 Project Overview
+deep-learning  Advanced Time Series Forecasting with LSTM
+Hyperparameter Optimization and Explainability
+
+📌 Project Overview
 
 This project implements an advanced multivariate time series forecasting system using a Long Short-Term Memory (LSTM) neural network. The primary focus goes beyond basic model training and emphasizes:
 
@@ -13,9 +15,9 @@ Model explainability using Integrated Gradients
 
 The entire pipeline is designed to reflect production-quality deep learning workflows for time series data.
 
-📂 Project Structure ├── lstm_optimization.py # Main Python implementation ├── README.md # Project documentation
+📂 Project Structure ├── lstm_optimization.py # Main Python implementation ├── README.md 
 
-🧠 Key Concepts Covered
+ Key Concepts Covered
 
 Multivariate time series modeling
 
@@ -29,7 +31,7 @@ Bayesian optimization (Optuna)
 
 Explainable AI (Integrated Gradients)
 
-📊 Dataset Description
+ Dataset Description
 
 A synthetic multivariate time series dataset is programmatically generated to mimic real-world behavior.
 
@@ -47,7 +49,7 @@ Random noise
 
 Each series acts as an independent feature, and the forecasting target is derived from the first feature.
 
-⚙️ Data Preprocessing Steps Performed
+ Data Preprocessing Steps Performed
 
 Stationarity Check Augmented Dickey–Fuller (ADF) test is applied to each feature.
 
@@ -61,7 +63,7 @@ Forecast horizon: 2 steps ahead
 
 This converts the dataset into supervised learning format suitable for LSTM models.
 
-🏗️ Model Architecture
+ Model Architecture
 
 The forecasting model is an LSTM-based deep neural network.
 
@@ -77,7 +79,7 @@ Dense output layer for multi-step forecasting
 
 The architecture is dynamically configured during hyperparameter optimization.
 
-🔍 Hyperparameter Optimization
+Hyperparameter Optimization
 
 Optuna is used to perform Bayesian hyperparameter optimization.
 
@@ -97,7 +99,7 @@ Minimize Root Mean Squared Error (RMSE) on the validation set.
 
 This approach efficiently explores the search space and identifies the best-performing model configuration.
 
-📏 Evaluation Metrics
+Evaluation Metrics
 
 Model performance is evaluated using:
 
@@ -115,7 +117,7 @@ Compared against a naive forecast
 
 Values below 1 indicate better-than-naive performance
 
-🔍 Model Explainability
+Model Explainability
 
 To interpret the deep learning model’s predictions, Integrated Gradients is applied.
 
@@ -137,7 +139,7 @@ Feature importance is visualized using bar charts
 
 This step ensures the model is not a black box.
 
-📈 Results & Observations
+Results & Observations
 
 Optimized LSTM significantly outperforms naive forecasting
 
@@ -147,7 +149,7 @@ Integrated Gradients reveal dominant contributing features
 
 Multi-step forecasting captures temporal dependencies effectively
 
-🛠️ Technologies Used Tool Purpose Python Core programming NumPy / Pandas Data handling TensorFlow / Keras Deep learning Optuna Hyperparameter optimization Scikit-learn Scaling & metrics Statsmodels Stationarity testing Matplotlib Visualization 🚀 How to Run
+Technologies Used Tool Purpose Python Core programming NumPy / Pandas Data handling TensorFlow / Keras Deep learning Optuna Hyperparameter optimization Scikit-learn Scaling & metrics Statsmodels Stationarity testing Matplotlib Visualization 🚀 How to Run
 
 Open Google Colab or local Python environment
 
@@ -157,7 +159,7 @@ Run the script:
 
 python lstm_optimization.py
 
-📌 Conclusion
+Conclusion
 
 This project demonstrates how deep learning-based time series forecasting can be enhanced through:
 
